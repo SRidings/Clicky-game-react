@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://vignette.wikia.nocookie.net/epic-rap-battles-of-cartoons/images/0/0d/Popeye_Based_On.png/revision/latest?cb=20160404145746",
+    "clicked": false
+  },
+  {
+    "id": 2,
+    "image": "https://vignette.wikia.nocookie.net/p__/images/0/09/Garfield.png/revision/latest?cb=20120709141238&path-prefix=protagonist",
+    "clicked": false
+  },
+  {
+    "id": 3,
+    "image": "http://pngimg.com/uploads/tom_and_jerry/tom_and_jerry_PNG53.png",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "https://vignette.wikia.nocookie.net/yokai-fanon/images/6/65/Bart_Simpson.png/revision/latest?cb=20160902152052",
+    "clicked": false
+  },
+  {
+    "id": 5,
+    "image": "https://orig00.deviantart.net/4253/f/2013/090/8/6/woody_woodpecker_by_mollyketty-d5zyp5s.png",
+    "clicked": false
+  },
+  {
+    "id": 6,
+    "image": "https://i.pinimg.com/originals/d6/e1/0e/d6e10ea9961854ee5ad4243bb014082e.png",
+    "clicked": false
+  },
+  {
+    "id": 7,
+    "image": "https://vignette.wikia.nocookie.net/fiction-wrestling-multiverse/images/2/2b/Bugs_Bunny.png/revision/latest?cb=20131231100134",
+    "clicked": false
+  },
+  {
+    "id": 8,
+    "image": "http://www.pngmart.com/files/4/Mickey-Mouse-PNG-HD.png",
+    "clicked": false
+  },
+  {
+    "id": 9,
+    "image": "https://img00.deviantart.net/5cf1/i/2012/137/7/0/super_sonic__classic__by_songokukai-d505xjk.png",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "https://vignette.wikia.nocookie.net/unluigi/images/a/aa/NewSuperMarioBros-Luigi.png/revision/latest?cb=20100324014714",
+    "clicked": false
+  },
+  {
+    "id": 11,
+    "image": "https://orig00.deviantart.net/cc8a/f/2016/207/6/c/cartoon_network_week_06__johnny_bravo_by_the_driz-dabgmet.png",
+    "clicked": false
+  },
+  {
+    "id": 12,
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Fred_Flintstone.png/165px-Fred_Flintstone.png",
+    "clicked": false
+  }
+]
