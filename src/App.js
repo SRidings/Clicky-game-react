@@ -7,7 +7,6 @@ import friends from "./friends.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
     score: 0,
     highScore: 0,
@@ -15,17 +14,18 @@ class App extends Component {
   };
 
   randomRender = id => {
-    this.state.friends.forEach((pic) => {
-      if (pic.id === id) {
-        if (pic.cliked) {
-          console.log('You lose, this card has been selected before.');
+    this.state.friends.forEach((image) => {
+      if (image.id === id) {
+        if (image.cliked) {
+          // $("#myModal").modal('toggle');
+          alert('YOU LOST!! This card was previously selected.');
           this.setState({})
-          this.reset();
+          this.resetGame();
           return false;
         }
         else {
           this.updateScore();
-          pic.cliked = true;
+          image.cliked = true;
         }
         if (this.state.score >= this.state.highScore) {
           this.newHighScore();
@@ -34,11 +34,10 @@ class App extends Component {
     });
   }
 
-  changePage = (array) => {
+  randomOrganize = (array) => {
     let copy = [], n = array.length, i;
     while (n) {
       i = Math.floor(Math.random() * array.length);
-
       if (i in array) {
         copy.push(array[i]);
         delete array[i];
@@ -62,19 +61,20 @@ class App extends Component {
 
   winning = () => {
     if (this.state.score === this.state.friends.length) {
+      alert('YOU WIN!! congratulations!')
       this.setState({});
-      this.reset();
+      this.resetGame();
     }
     else {
       setTimeout(() => {
-        this.changePage(this.state.friends)
+        this.randomOrganize(this.state.friends)
       }, 500);
     }
   }
 
-  reset = () => {
-    this.state.friends.forEach((pic) => {
-      pic.cliked = false;
+  resetGame = () => {
+    this.state.friends.forEach((image) => {
+      image.cliked = false;
     })
     this.setState({ score: 0 })
   }
@@ -83,23 +83,16 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <div className='row'>
           <Nav score={this.state.score} highScore={this.state.highScore} />
-        </div>
-
-        <div className='row'>
           <GameInstructions />
-        </div>
-
         {this.state.friends.map(friend => {
           return <FriendCard
             {...friend}
             key={friend.id}
             randomRender={this.randomRender}
-            changePage={() => this.changePage(this.state.friends)}
+            randomOrganize={() => this.randomOrganize(this.state.friends)}
           />;
         })}
-
       </Wrapper>
     );
   }
