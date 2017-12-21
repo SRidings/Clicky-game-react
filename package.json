@@ -5,11 +5,11 @@
   "homepage": "https://ccrs2006.github.io/Clicky-game-react",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17",
-    "gh-pages": "^1.1.0",
-    "react-font-face": "^0.2.1"
+    "react-font-face": "^0.2.1",
+    "react-scripts": "1.0.17"
   },
   "scripts": {
     "predeploy": "npm run build",
